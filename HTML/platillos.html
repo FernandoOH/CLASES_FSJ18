@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Platillos</title>
+</head>
+<body>
+    <header>
+        <h1>Los platillos mas deliciosos</h1>
+    </header>
+    <nav>
+        <!-- listas ordenadas <ol> y listas desordenadas <ul> -->
+            <ul>
+             <!-- elementos de lista <li> 
+             pagina principal platillos, ubicacion -->
+                <li>
+                    <!-- hipervinculos <a> (direccionarme de un archivo a otro) 
+                    dentro de la etiqueta <a> existe la propiedad href, href= es la ruta
+                    donde vamos a redireccionar -->
+                     <a href="./index.html">Principal</a>
+                </li>
+                <li>
+                    <a href="./platillos.html">Platillos</a>
+                </li>
+                <li>
+                    <a href="#">Ubicacion</a>
+                </li>
+             </ul>
+    </nav>
+    <section>
+        <div>
+            <p>
+                <!-- esta etiqueta muestra en negrito un mensaje importante-->
+                <strong>Conoce nuestros mejores platillos</strong>
+            </p>
+            <!-- <iframe>: adjuntar videos, imagenes, documentos, codigo, mapa de google -->
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/KGQP7R2WmIE" 
+                title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
+                encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+        <div>
+            <!--
+                border : muestra el border de la tabla
+                cellpadding: es el espacio del contenido de la celda
+                cellspacing: es la forma que queremos que se vea el border o demasiado plano o demasiado grueso
+            -->
+            <table border="1" cellpadding="5" cellspacing="0">
+                <!-- encabezado de la tabla-->
+                <thead>
+                    <!-- titulos-->
+                        <th>Platillos</th>
+                        <th>Descripcion</th>
+                        <th>Precio</th>
+                    </th>
+                </thead>
+                 <!-- cuerpo -->
+                <tbody>
+                    <tr>
+                        <!-- asignacion de columnas-->
+                        <td>Pollo en Crema</td>
+                        <td>Pechuga a la planca en crema de hongos</td>
+                        <td>$2.50</td>
+                    </tr>
+                    <tr>
+                        <!-- asignacion de columnas-->
+                        <td>Carne Asada</td>
+                        <td>Combo que incluye Chirimol, Arroz, Aderezos</td>
+                        <td>$3.75</td>
+                    </tr>
+                    <tr>
+                        <!-- asignacion de columnas-->
+                        <td>Lasagna</td>
+                        <td>Carne, Pollo o Mixto</td>
+                        <td>$3.00</td>
+                    </tr>
+                </tbody>
+            </table>
+            <h3>Seccion de bebidas</h3>
+            <table border="1" cellpadding="5" cellspacing="0">
+                <thead>
+                    <th>Bebida</th>
+                    <th>Marca</th>
+                    <th>Precio</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Jugo de Naranja</td>
+                        <td>La Granja</td>
+                        <td>$1.25</td>
+                    </tr>
+                    <tr>
+                        <td>Licuado Guineo</td>
+                        <td>Natural</td>
+                        <td rowspan="3">$0.75</td>
+                    </tr>
+                    <tr>
+                        <td>Soda</td>
+                        <td>Coca Cola</td>
+                    </tr>
+                    <tr>
+                        <td>Limonada</td>
+                        <td>Natural</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="3">El Sazon</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+    </section>
+</body>
+</html>

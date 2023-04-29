@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> <!-- aceptamos todo tipo de caracter -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- sera compatible con cualquier navegador-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- sera compatible 
+    con cualquier dispositivo-->
+    <title>El Sazon</title>
+</head>
+<body>
+    <!-- encabezado-->
+    <header>
+        <h1>Restaurante El Sazon</h1>
+    </header>  
+    <!-- menu de navegacion -->
+    <nav>
+        <!-- listas ordenadas <ol> y listas desordenadas <ul> -->
+            <ul>
+                <!-- elementos de lista <li> 
+                pagina principal platillos, ubicacion -->
+                    <li>
+                        <!-- hipervinculos <a> (direccionarme de un archivo a otro) 
+                        dentro de la etiqueta <a> existe la propiedad href, href= es la ruta
+                        donde vamos a redireccionar -->
+                         <a href="./index.html">Principal</a>
+                    </li>
+                    <li>
+                        <a href="./platillos.html">Platillos</a>
+                    </li>
+                    <li>
+                        <a href="#">Ubicacion</a>
+                    </li>
+            </ul>
+    </nav>
+    <!-- contenido principal <main> <section> <div> <article> -->
+        <main>
+            <section>
+                <!-- <img>: nos sirve para colocar una imagen 
+                    src = ruta donde esta ubicada la imagen
+                    alt = nombre o titulo de la imagen 
+                    ./ = hace referencia a la raiz de la carpeta donde estamos trabajando
+                -->
+                <img src="./restaurante.jpg" alt="Restaurante El Sazon">
+            </section>
+            <section>
+                <!-- <p> : etiqueta para colocar parrafos -->
+                    <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure cumque qui 
+                        assumenda, a dolorum inventore? Minus tempora commodi nobis, id natus blanditiis
+                         aperiam, aliquam quo est expedita itaque provident a.
+                    </p>
+            </section>
+            <!-- 
+                contenido no tan relevante <aside>
+            -->
+            <aside>
+                <h4>Dale Click Aqui</h4>
+                <!-- <button> : etiqueta para colocar botones -->
+                    <button>Promociones</button>
+            </aside>
+        </main>
+        <!-- apartado del pie de pagina-->
+        <footer>
+            <h3>2023 Fernando Chiquillo</h3>
+        </footer>
+</body>
+</html>
